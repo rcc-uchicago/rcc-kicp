@@ -1,0 +1,9 @@
+CFLAGS=--std=c99 -O2
+
+
+addVecCpu: addVecCpu.c
+	gcc -o addVecCpu $(CFLAGS) addVecCpu.c
+
+clean:
+	rm -f addVecCpu
+

@@ -1,2 +1,0 @@
-  File "test.py", line 59
-SyntaxError: Non-ASCII character '\xc2' in file test.py on line 59, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details

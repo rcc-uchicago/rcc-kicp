@@ -1,4 +1,4 @@
-Job started on Tue Jan 28 10:19:37 CST 2020
+Job started on Tue Jan 28 10:41:35 CST 2020
 Device mapping:
 /job:localhost/replica:0/task:0/device:XLA_CPU:0 -> device: XLA_CPU device
 /job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: Tesla K80, pci bus id: 0000:08:00.0, compute capability: 3.7
@@ -312,6 +312,6 @@ Epoch = 9700, loss = 4.167e-06
 Epoch = 9800, loss = 4.125e-06
 Epoch = 9900, loss = 4.368e-06
 Epoch = 10000, loss = 4.096e-06
-Elapsed time (via time()): 27.331866 s
-Elapsed time (via clock()): 36.009387 s
-Job finished on Tue Jan 28 10:21:05 CST 2020
+Elapsed time (via time()): 25.320510 s
+Elapsed time (via clock()): 35.887511 s
+Job finished on Tue Jan 28 10:42:16 CST 2020

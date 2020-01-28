@@ -70,10 +70,12 @@ if __name__ == '__main__':
     start_clock = time.process_time()
     #train_dict = {x_train: X_col, y_train: Y_col} unhashable
     n = 0
+    Loss=[]
 # This part has to be offloaded to GPUs
     with tf.device('/device:GPU:0'):
         while n <= Nmax:
             y_pred, train_, loss_ = sess.run([y_p, train, loss], feed_dict=train_dict)
+            Loss.append(loss_)
             n += 1
             if n%100 ==0:
                 print('Epoch = %d, loss = %.3e'%(n, loss_))
@@ -88,7 +90,6 @@ if __name__ == '__main__':
     xplot = np.concatenate(X_col, axis = 0)
     yplot = np.concatenate(Y_col, axis = 0)
     y_pred_plot = np.concatenate(Y_pred, axis = 0)
-    error = yplot - y_pred_plot
     fig=plt.figure()
     plt.plot(xplot, yplot, '-b', linewidth=2.0, label='Actual')
     plt.plot(xplot, y_pred_plot, '--r',linewidth=1.8, label='Predicted')
@@ -98,9 +99,10 @@ if __name__ == '__main__':
     plt.show()
     fig.savefig('output.png')
     fig=plt.figure()
-    plt.plot(xplot, error, '-k', linewidth=2.0, label='Actual')
+    epoch=[i for i in range(1, Nmax+2)]
+    plt.semilogy(epoch, Loss, '-k', linewidth=2.0, label='Loss')
     plt.xlabel("x")
-    plt.ylabel("error")
+    plt.ylabel("Loss")
     plt.legend()
     plt.show()
-    fig.savefig('error.png')
+    fig.savefig('Loss.png')

@@ -1,0 +1,317 @@
+Job started on Tue Jan 28 10:19:37 CST 2020
+Device mapping:
+/job:localhost/replica:0/task:0/device:XLA_CPU:0 -> device: XLA_CPU device
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: Tesla K80, pci bus id: 0000:08:00.0, compute capability: 3.7
+/job:localhost/replica:0/task:0/device:XLA_GPU:0 -> device: XLA_GPU device
+No. of layers are  4
+Size for weight is  [1, 16]
+Size for weight is  [16, 16]
+Size for weight is  [16, 1]
+Wi is  [<tf.Variable 'Variable:0' shape=(1, 16) dtype=float32_ref>, <tf.Variable 'Variable_1:0' shape=(16, 16) dtype=float32_ref>, <tf.Variable 'Variable_2:0' shape=(16, 1) dtype=float32_ref>]
+random_normal/RandomStandardNormal: (RandomStandardNormal): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_1/RandomStandardNormal: (RandomStandardNormal): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_1/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_2/RandomStandardNormal: (RandomStandardNormal): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_2/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+Add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Tanh: (Tanh): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+Add_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Tanh_1: (Tanh): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul_2: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+Add_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+Square: (Square): /job:localhost/replica:0/task:0/device:GPU:0
+Mean: (Mean): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Fill: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Tile: (Tile): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Prod: (Prod): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Prod_1: (Prod): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Maximum: (Maximum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/floordiv: (FloorDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Cast: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/truediv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Square_grad/Mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Square_grad/Mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Neg: (Neg): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/sub_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_2_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_2_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_2_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_2_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_2_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Tanh_1_grad/TanhGrad: (TanhGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Tanh_grad/TanhGrad: (TanhGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_1/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_2/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_3/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_4/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_5/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/Assign_1: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Adam: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+init: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_1/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_1/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_1/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_2/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_2/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+random_normal_2/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+zeros_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+zeros_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+serial_x: (Placeholder): /job:localhost/replica:0/task:0/device:GPU:0
+serial_y: (Placeholder): /job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/grad_ys_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Reshape/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Const_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Maximum/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Square_grad/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_2_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_1_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Add_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/initial_value: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/initial_value: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/learning_rate: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/beta1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/beta2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/epsilon: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Epoch = 100, loss = 8.995e-02
+Epoch = 200, loss = 7.757e-02
+Epoch = 300, loss = 4.519e-03
+Epoch = 400, loss = 2.569e-03
+Epoch = 500, loss = 1.851e-03
+Epoch = 600, loss = 1.443e-03
+Epoch = 700, loss = 1.187e-03
+Epoch = 800, loss = 1.005e-03
+Epoch = 900, loss = 8.627e-04
+Epoch = 1000, loss = 7.460e-04
+Epoch = 1100, loss = 6.481e-04
+Epoch = 1200, loss = 5.641e-04
+Epoch = 1300, loss = 4.927e-04
+Epoch = 1400, loss = 4.312e-04
+Epoch = 1500, loss = 3.787e-04
+Epoch = 1600, loss = 3.333e-04
+Epoch = 1700, loss = 2.941e-04
+Epoch = 1800, loss = 2.603e-04
+Epoch = 1900, loss = 2.331e-04
+Epoch = 2000, loss = 2.050e-04
+Epoch = 2100, loss = 1.833e-04
+Epoch = 2200, loss = 1.622e-04
+Epoch = 2300, loss = 1.448e-04
+Epoch = 2400, loss = 1.284e-04
+Epoch = 2500, loss = 1.143e-04
+Epoch = 2600, loss = 1.015e-04
+Epoch = 2700, loss = 9.030e-05
+Epoch = 2800, loss = 7.966e-05
+Epoch = 2900, loss = 7.012e-05
+Epoch = 3000, loss = 6.194e-05
+Epoch = 3100, loss = 5.433e-05
+Epoch = 3200, loss = 6.141e-05
+Epoch = 3300, loss = 4.147e-05
+Epoch = 3400, loss = 3.596e-05
+Epoch = 3500, loss = 3.136e-05
+Epoch = 3600, loss = 2.703e-05
+Epoch = 3700, loss = 3.925e-05
+Epoch = 3800, loss = 2.026e-05
+Epoch = 3900, loss = 1.752e-05
+Epoch = 4000, loss = 1.560e-05
+Epoch = 4100, loss = 1.339e-05
+Epoch = 4200, loss = 4.054e-05
+Epoch = 4300, loss = 1.056e-05
+Epoch = 4400, loss = 9.499e-06
+Epoch = 4500, loss = 9.679e-06
+Epoch = 4600, loss = 8.070e-06
+Epoch = 4700, loss = 7.540e-06
+Epoch = 4800, loss = 1.637e-05
+Epoch = 4900, loss = 6.823e-06
+Epoch = 5000, loss = 6.558e-06
+Epoch = 5100, loss = 6.564e-06
+Epoch = 5200, loss = 6.204e-06
+Epoch = 5300, loss = 6.060e-06
+Epoch = 5400, loss = 6.245e-06
+Epoch = 5500, loss = 5.851e-06
+Epoch = 5600, loss = 5.756e-06
+Epoch = 5700, loss = 5.696e-06
+Epoch = 5800, loss = 5.621e-06
+Epoch = 5900, loss = 5.548e-06
+Epoch = 6000, loss = 5.833e-06
+Epoch = 6100, loss = 5.433e-06
+Epoch = 6200, loss = 5.426e-06
+Epoch = 6300, loss = 5.352e-06
+Epoch = 6400, loss = 5.277e-06
+Epoch = 6500, loss = 9.968e-06
+Epoch = 6600, loss = 5.190e-06
+Epoch = 6700, loss = 5.134e-06
+Epoch = 6800, loss = 5.934e-06
+Epoch = 6900, loss = 5.056e-06
+Epoch = 7000, loss = 5.010e-06
+Epoch = 7100, loss = 6.139e-06
+Epoch = 7200, loss = 4.936e-06
+Epoch = 7300, loss = 4.893e-06
+Epoch = 7400, loss = 4.876e-06
+Epoch = 7500, loss = 4.826e-06
+Epoch = 7600, loss = 4.785e-06
+Epoch = 7700, loss = 4.820e-06
+Epoch = 7800, loss = 4.723e-06
+Epoch = 7900, loss = 4.683e-06
+Epoch = 8000, loss = 4.876e-06
+Epoch = 8100, loss = 4.622e-06
+Epoch = 8200, loss = 4.584e-06
+Epoch = 8300, loss = 4.635e-06
+Epoch = 8400, loss = 4.528e-06
+Epoch = 8500, loss = 4.491e-06
+Epoch = 8600, loss = 4.494e-06
+Epoch = 8700, loss = 4.437e-06
+Epoch = 8800, loss = 4.402e-06
+Epoch = 8900, loss = 4.408e-06
+Epoch = 9000, loss = 4.345e-06
+Epoch = 9100, loss = 1.966e-05
+Epoch = 9200, loss = 4.290e-06
+Epoch = 9300, loss = 4.257e-06
+Epoch = 9400, loss = 4.597e-06
+Epoch = 9500, loss = 4.206e-06
+Epoch = 9600, loss = 4.174e-06
+Epoch = 9700, loss = 4.167e-06
+Epoch = 9800, loss = 4.125e-06
+Epoch = 9900, loss = 4.368e-06
+Epoch = 10000, loss = 4.096e-06
+Elapsed time (via time()): 27.331866 s
+Elapsed time (via clock()): 36.009387 s
+Job finished on Tue Jan 28 10:21:05 CST 2020

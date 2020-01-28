@@ -73,8 +73,8 @@ if __name__ == '__main__':
         while n <= Nmax:
             y_pred, train_, loss_ = sess.run([y_p, train, loss], feed_dict=train_dict)
             n += 1
-        if n%100 == 0:
-            print('Epoch = %d, loss = %.3e'%(n, loss_))
+            if n%100 ==0:
+                print('Epoch = %d, loss = %.3e'%(n, loss_))
     stop_time = time.perf_counter()
     stop_clock = time.process_time()
     print('Elapsed time (via time()): %f s'%(stop_time - start_time))
@@ -87,7 +87,8 @@ if __name__ == '__main__':
     yplot = np.concatenate(Y_col, axis = 0)
     y_pred_plot = np.concatenate(Y_pred, axis = 0)
     fig=plt.figure()
-    plt.plot(xplot, yplot, 'ob')
-    plt.plot(xplot, y_pred_plot, '--k')
-    #plt.show()
+    plt.plot(xplot, yplot, '-b', linewidth=2.0, label='Actual')
+    plt.plot(xplot, y_pred_plot, '--r',linewidth=1.8, label='Predicted')
+    plt.legend()
+    plt.show()
     fig.savefig('plot.png')

@@ -6,9 +6,7 @@
 #SBATACH --mem=2G
 #SBATCH --partition=broadwl-lc
 #SBATCH --time=00:20:00
-##SBATCH --account=kicp
-##SBATCH --partition=kicp
-##SBATCH --reservation=kicp_workshop
+##SBATCH --reservation=kicpworkshop_cpu
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 

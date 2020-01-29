@@ -23,7 +23,7 @@ double cpuSecond(){
 int main(int argc, char **argv)
 {
   int N = 1 << 24;
-  
+  printf("N is %d\n", N);
   float*x = (float*)malloc(N*sizeof(float));
   float*y = (float*)malloc(N*sizeof(float));
   float*z = (float*)malloc(N*sizeof(float));

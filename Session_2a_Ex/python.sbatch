@@ -6,7 +6,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem-per-cpu=2000M
 #SBATCH --partition=broadwl
-#SBATCH --time=1:00:00
+#SBATCH --reservation=kicpworkshop-cpu
+#SBATCH --time=00:30:00
 
 module load python
 echo "job started at `date`"
